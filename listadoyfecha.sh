@@ -4,5 +4,7 @@
 # descripcion: descripcion
 # autor: Francisco Ruiz
 
-echo "hello"
-echo "world"
+clear
+echo "Contenido directorio"
+date
+ls
