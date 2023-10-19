@@ -1,0 +1,12 @@
+fic
+fic866866866.log
+fic866866.log
+fic866868.log
+fic866.log
+fic867.log
+fic868.log
+fic.log
+readme.txt
+salidals.txt
+salida.txt
+typescript

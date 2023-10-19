@@ -1,0 +1,13 @@
+jue 19 oct 2023 08:48:21 CEST
+usuario  tty2         2023-09-28 10:14 (tty2)
+comandos.txt
+db.class.php
+error.log
+header.inc.php
+index.php
+install.txt
+mail.class.php
+prueba
+readme.txt
+registro.txt
+resu
