@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# script: script
-# descripcion: descripcion
+# script: script 1 examen
+# descripcion: script 1 examen bash
 # autor: Francisco Ruiz
 
 clear
@@ -26,14 +26,18 @@ fi
 
 
 for archivo in $ruta1/*; do
+    if [ -d $archivo ]; then
+    echo "No se movera $archivo ya que es un directorio"
+    else
     fecha=$(stat -c %y "$archivo")
 	ano=$(date -d "$fecha" +%Y)
     mes=$(date -d "$fecha" +%m)
     if [ ! -d "$ruta2/$ano/$mes" ]; then
         mkdir -p "$ruta2/$ano/$mes"
     fi
-    cp "$archivo" "$ruta2/$ano/$mes"
+    mv "$archivo" "$ruta2/$ano/$mes"
+    fi
 done
 
-echo "Archivos copiados correctamente"
+echo "Archivos movidos correctamente"
 
